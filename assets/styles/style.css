@@ -1,0 +1,71 @@
+:root {
+	--primary-green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--neutral-grey: hsl(0, 0%, 20%);
+	--neutral-dark-grey: hsl(0, 0%, 12%);
+	--neutral-off-black: hsl(0, 0%, 8%);
+
+	--font-size: 14px;
+	--font-light: 400;
+	--font-normal: 600;
+	--font-bold: 700;
+}
+
+@font-face {
+	font-family: inter;
+	src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+	font-family: inter;
+	background-color: var(--neutral-off-black);
+	color: var(--white);
+	font-size: var(--font-size);
+	font-weight: var(--font-normal);
+	height: 100vh;
+}
+.wrapper {
+	max-width: 500px;
+	margin: 2rem;
+	padding: 2rem;
+	background-color: var(--neutral-dark-grey);
+}
+
+.user-info {
+	text-align: center;
+	margin-bottom: 2rem;
+	& img {
+		height: auto;
+		width: 7rem;
+		border-radius: 50%;
+		margin-bottom: 1rem;
+	}
+	& h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	& p {
+		color: var(--primary-green);
+	}
+}
+
+.about {
+	text-align: center;
+
+	margin-bottom: 1.5rem;
+}
+
+.social-links-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+
+	& a {
+		background-color: var(--neutral-grey);
+		color: var(--white);
+		text-decoration: none;
+		padding: 1rem;
+		border-radius: 5px;
+		text-align: center;
+	}
+}
