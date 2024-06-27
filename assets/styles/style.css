@@ -22,13 +22,19 @@ body {
 	color: var(--white);
 	font-size: var(--font-size);
 	font-weight: var(--font-normal);
+}
+
+main {
+	display: grid;
+	place-content: center;
+	grid-auto-columns: minmax(0, 500px);
 	height: 100vh;
+	padding: 0 2rem;
 }
 .wrapper {
-	max-width: 500px;
-	margin: 2rem;
 	padding: 2rem;
 	background-color: var(--neutral-dark-grey);
+	border-radius: 20px;
 }
 
 .user-info {
@@ -67,5 +73,10 @@ body {
 		padding: 1rem;
 		border-radius: 5px;
 		text-align: center;
+		&:hover {
+			background-color: var(--primary-green);
+			transition: background-color 500ms linear;
+			color: var(--neutral-off-black);
+		}
 	}
 }
